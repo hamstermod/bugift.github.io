@@ -1,0 +1,211 @@
+*{
+    box-sizing: border-box;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+body{
+    background-color: #1b2128;
+    padding: 10px;
+}
+.content{
+    width: 200px;
+    height: 300px;
+    background-color: #242e38;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+}
+.content lottie-player{
+    border-radius: 10px;
+}
+.textName{
+    color: white;
+}
+.giftId{
+    /*margin-left: 10px;*/
+    color: hsla(215 20.2% 65.1%);
+}
+.flex{
+    display: flex;
+}
+.buy{
+    width: 100%;
+    height: 50px;
+    background-color: hsla(201 100% 46%);
+    text-decoration: none;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+.buy img{
+    width: 20px;
+    margin-left: 5px;
+}
+#items{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#displayBuy{
+    width: 100%;
+    height: 70%;
+    /*background-color: #242e38;*/
+    position: fixed;
+    left: 0;
+    bottom: -100%;
+    color: white;
+    transition: 1s;
+}
+#displayBuy.active{
+    bottom: 0;
+}
+
+.items-center {
+    align-items: center;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.card {
+    width: 100%;
+    border-radius: 28px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    background: white;
+}
+
+.header {
+    background: linear-gradient(135deg, #e58c5d, #c36555);
+    padding: 30px 20px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.header .icon {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+}
+
+.header .close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.header lottie-player {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 10px;
+}
+
+.header h2 {
+    color: white;
+    margin: 0;
+    font-size: 22px;
+}
+
+.header .id {
+    background: rgba(255,255,255,0.3);
+    border-radius: 12px;
+    color: white;
+    font-size: 13px;
+    padding: 3px 10px;
+    display: inline-block;
+    margin-top: 6px;
+}
+
+.attributes {
+    background: white;
+    padding: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.attr-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.attr-row:last-child {
+    margin-bottom: 0;
+}
+
+.attr-label {
+    color: #999;
+    font-size: 13px;
+}
+
+.attr-value {
+    font-weight: bold;
+}
+
+.attr-percent {
+    background: #eee;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    color: #666;
+}
+.footer {
+    padding: 16px;
+    background: white;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
+
+.buy-full {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background: #8376f9;
+    border: none;
+    padding: 14px 24px;
+    border-radius: 999px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+.buy-full .buy-icon {
+    /*background: #63e0ff;*/
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    margin-left: 6px;
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+}
+
+.buy-price {
+    margin-left: auto;
+    margin-right: 8px;
+
+}
+#closePageBlurBuy{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    backdrop-filter: blur(20px);
+}
+.hide{
+    display: none;
+}
