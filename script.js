@@ -72,7 +72,7 @@ function render(data) {
         const t = data[i];
         if (bannedNames.includes(t.name)) continue;
 
-        const price = +((t.price + (t.price * 10 / 100)).toFixed(3));
+        const price = +((t.price + (t.price / 5)).toFixed(3));
 
         const contentDiv = document.createElement("div");
         contentDiv.className = "content";
